@@ -1229,7 +1229,7 @@ tp382
 Rp383
 sbsa(dp384
 g14
-I00
+I01
 sg15
 (lp385
 F710.0
@@ -1240,7 +1240,7 @@ Tiddler
 p386
 (dp387
 g21
-VHaha... Wait till he sees what I find here.<<set $paper to $paper + 1 >>\u000a<<display 'paper-quality'>>
+VHaha... Wait till he sees what I find [[here|previous()][$paper = $paper + 1]]\u000a<<display 'paper-quality'>>
 p388
 sg23
 VSmith
@@ -1250,9 +1250,9 @@ g26
 ((I2014
 I8
 I23
-I12
-I3
-I7
+I13
+I39
+I38
 I5
 I235
 I0
