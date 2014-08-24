@@ -898,7 +898,7 @@ tp284
 Rp285
 sbsa(dp286
 g14
-I01
+I00
 sg15
 (lp287
 F990.0
@@ -2064,7 +2064,7 @@ Tiddler
 p638
 (dp639
 g21
-V<<$set tired to true>>Can't run any more. \u000a\u000a<<if $weapon is 'axe' or $weapon is 'spear'>>[[Turn around. Fight.|bear attacks]]<<else if $weapon is 'thrower' >>[[Turn around. Shoot spear.|Shoot spear]]<<endif>>
+V<<set $tired to true>>Can't run any more. \u000a\u000a<<if $weapon is 'axe' or $weapon is 'spear'>>[[Turn around. Fight.|bear attacks]]<<else if $weapon is 'thrower' >>[[Turn around. Shoot spear.|Shoot spear]]<<endif>>
 p640
 sg23
 Vfail3
@@ -2074,9 +2074,9 @@ g26
 ((I2014
 I8
 I24
-I9
-I18
-I20
+I17
+I3
+I39
 I6
 I236
 I0
@@ -2152,7 +2152,7 @@ Tiddler
 p664
 (dp665
 g21
-V<<if not $inspected and not $looked and not $read>>After a few hours work, you dig up a<<else>>A<<endif>> <<if $read>>typical <<endif>>[[Kalimbergian campground][$read=true]].\u000a\u000a<<if not $inspected>>[[Inspect campground.][$inspected=true]]<<else>>It consists of faint traces of a fire.<<endif>>\u000a<<if not $looked>>[[Look around.][$looked=true]]<<else>>You are alone in the forest<<endif>>\u000a\u000aAll is as [[expected]].\u000a\u000a<<display paper-quality>>
+V<<if not $inspected and not $looked and not $read>>After a few hours work, you dig up a<<else>>A<<endif>> <<if $read>>typical <<endif>>[[Kalimbergian campground][$read=true]].\u000a\u000a<<if not $inspected>>[[Inspect campground.][$inspected=true]]<<else>>It consists of faint traces of a fire.<<endif>>\u000a<<if not $looked>>[[Look around.][$looked=true]]<<else>>You are alone in the forest<<endif>>\u000a\u000a<<if $inspected and $looked>>All is as [[expected]].<<endif>>\u000a\u000a<<display paper-quality>>
 p666
 sg23
 Vhut1
@@ -2162,9 +2162,9 @@ g26
 ((I2014
 I8
 I24
-I9
-I21
-I1
+I16
+I55
+I28
 I6
 I236
 I0
@@ -2952,7 +2952,7 @@ Tiddler
 p904
 (dp905
 g21
-V<<if (($skull is 'bear') and ($originality <= 1)) or $niks >>"Dear sir,\u000a\u000aWe regret to inform you that we will not be possible for us to publish your article "Connected Worlds: A New Insight Into the Hunting Habits of the Kalimbergians". We are sorry to find that its contents is lacking in both quantity and quality, your analyses being too shallow and too few to really be of any intellectual interest to our audience.<<if $skull is 'bear'>>Moreover, we would like to point out that a similar bear skull to yours was found in West Kalimberg some months ago, and was thoroughly analysed by Dr. Howards.<<endif>> We would be pleased to consider any other piece you might have for publication in the future.\u000a\u000aYours Faithfully,\u000aThe Editor."\u000a\u000aTriumphantly the cracked skull rests on your desk.\u000a<<else if ($skull is 'bear') and ($originality > 1)>>"Dear Arch,\u000a\u000aThe journal asked that I write to you, since they felt if they did it they might hurt your feelings, and everyone appreciates your work here. But really... Are you out of your mind? You find a bear skull the age of which you have not even assessed, and all of a sudden you go throwing wild hypotheses about advanced Kalimbergian weaponry and their superior running spead. I mean, with all that's been happening with the PArty and their sick ideologies, you wouldn't want to get into trouble right? Maybe you should take some rest, clear up your mind ( I hear you're into meditation now, that's good). Come back to us when you feel like doing some real, rigorous scientific work.\u000a\u000aYour friend,\u000aJ. Smith"\u000a\u000aWith a beastly grin the skull rests on your desk.\u000a<<else if ($skull is 'human') and ($originality <= 1)>>"Dear sir,\u000a\u000aWe are pleased to inform you that your article "Connected Worlds: A New Insight Into the Hunting Habits of the Kalimbergians" meets all the requirements for publication in our journal, provided you make all the modifications necessary to comply with our publishing standards. We thank you for choosing The Journal of University Research, and look forward to receiving more fascinating accounts from you.\u000a\u000aYours sincerely,\u000aThe Editor"\u000a\u000aYou meditate how all your career will from now be founded on a grinning, cracked skull.<<else if ($skull is 'human') and ($originality > 1)>>This is a bug, should not have happened.<<endif>>\u000a\u000a[[The End.|End]]
+V<<if (($skull is 'bear') and ($originality <= 1)) or $niks >>"Dear sir,\u000a\u000aWe regret to inform you that we will not be possible for us to publish your article "Connected Worlds: A New Insight Into the Hunting Habits of the Kalimbergians". We are sorry to find that its contents is lacking in both quantity and quality, your analyses being too shallow and too few to really be of any intellectual interest to our audience.<<if $skull is 'bear'>>Moreover, we would like to point out that a similar bear skull to yours was found in West Kalimberg some months ago, and was thoroughly analysed by Dr. Howards.<<endif>> We would be pleased to consider any other piece you might have for publication in the future.\u000a\u000aYours Faithfully,\u000aThe Editor."\u000a\u000aTriumphantly the cracked skull rests on your desk.\u000a<<else if ($skull is 'bear') and ($originality > 1)>>"Dear Arch,\u000a\u000aThe journal asked that I write to you, since they felt if they did it they might hurt your feelings, and everyone appreciates your work here. But really... Are you out of your mind? You find a bear skull the age of which you have not even assessed, and all of a sudden you go throwing wild hypotheses about advanced Kalimbergian weaponry and their superior running speed. Maybe , you wouldn't want to get into trouble right? Maybe you should take some rest, clear your mind ( I hear you're into meditation now, that's good). Come back to us when you feel like doing some real, rigorous, scientific work.\u000a\u000aYour friend,\u000aJ. Smith"\u000a\u000aWith a beastly grin the skull rests on your desk.\u000a<<else if ($skull is 'human') and ($originality <= 1)>>"Dear sir,\u000a\u000aWe are pleased to inform you that your article "Connected Worlds: A New Insight Into the Hunting Habits of the Kalimbergians" meets all the requirements for publication in our journal, provided you make all the modifications necessary to comply with our publishing standards. We thank you for choosing The Journal of University Research, and look forward to receiving more fascinating accounts from you.\u000a\u000aYours sincerely,\u000aThe Editor"\u000a\u000aYou meditate how all your career will from now be founded on a grinning, cracked skull.<<else if ($skull is 'human') and ($originality > 1)>>This is a bug, should not have happened.<<endif>>\u000a\u000a[[The End.|End]]
 p906
 sg23
 Vjudgement
@@ -2963,8 +2963,8 @@ g26
 I8
 I24
 I16
-I20
-I48
+I56
+I26
 I6
 I236
 I0
