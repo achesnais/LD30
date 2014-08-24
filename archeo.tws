@@ -2191,7 +2191,7 @@ tp675
 Rp676
 sbsa(dp677
 g14
-I00
+I01
 sg15
 (lp678
 F150.0
@@ -2202,7 +2202,7 @@ Tiddler
 p679
 (dp680
 g21
-V"Kalimberg (Man of): First and only specimen ever found in East Germany in 1956, consisting of complete foot, finger fragments and three vertebrae. Abrasion of finger bone indicates possible use of stone tools, though this is still widely debated. Campgrounds very frequent but always empty. Thomas & Johnson (1988) suggest semi-sedentary behavior related to cycles of the moon, but their analysis based on spatial distribution of campgrounds in the Upper Kalimberg has recently been criticised for being based on a psycho-cognitive model of hunter-gatherer interactions."\u000a\u000a[[//useless//|hut1]]
+V"Kalimberg (Man of): First and only specimen ever found in East Germany in 1956, consisting of complete foot, finger fragments and three vertebrae. Abrasion of finger bone indicates possible use of stone tools, though this is still widely debated. Campgrounds very frequent but always empty. Thomas & Johnson (1988) suggest semi-sedentary behavior related to cycles of the moon, but their analysis of spatial distribution of campgrounds in the Upper Kalimberg has recently been criticised for being based on a psycho-cognitive model of hunter-gatherer interactions."\u000a\u000a[[//useless//|hut1]]
 p681
 sg23
 VKalimbergian campground
@@ -2211,12 +2211,12 @@ sg25
 g26
 ((I2014
 I8
-I23
-I19
-I3
+I24
 I18
-I5
-I235
+I11
+I34
+I6
+I236
 I0
 tp683
 (dp684
@@ -2941,7 +2941,7 @@ tp900
 Rp901
 sbsa(dp902
 g14
-I01
+I00
 sg15
 (lp903
 F430.0
@@ -2952,7 +2952,7 @@ Tiddler
 p904
 (dp905
 g21
-V<<if (($skull is 'bear') and ($originality <= 1)) or $niks >>"Dear sir,\u000a\u000aWe regret to inform you that we will not be possible for us to publish your article "Connected Worlds: A New Insight Into the Hunting Habits of the Kalimbergians". We are sorry to find that its contents is lacking in both quantity and quality, your analyses being too shallow and too few to really be of any intellectual interest to our audience.<<if $skull is 'bear'>>Moreover, we would like to point out that a bear skull similar to yours was found in West Kalimberg some months ago, and was thoroughly analysed by Dr. Howards.<<endif>> We would be pleased to consider any other piece you might have for publication in the future.\u000a\u000aYours Faithfully,\u000aThe Editor."\u000a\u000aTriumphantly the cracked skull rests on your desk.\u000a<<else if ($skull is 'bear') and ($originality > 1)>>"Dear Arch,\u000a\u000aThe journal asked that I write to you, since they felt if they did it they might hurt your feelings, and everyone appreciates your work here. But really... Are you out of your mind? You find a bear skull the age of which you have not even assessed, and all of a sudden you go throwing wild hypotheses about advanced Kalimbergian weaponry and their superior running speed. Maybe you should take some rest, clear your mind ( I hear you're into meditation now, that's good). Come back to us when you feel like doing some real, rigorous, scientific work.\u000a\u000aYour friend,\u000aJ. Smith"\u000a\u000aWith a beastly grin the skull rests on your desk.\u000a<<else if ($skull is 'human') and ($originality <= 1)>>"Dear sir,\u000a\u000aWe are pleased to inform you that your article "Connected Worlds: A New Insight Into the Hunting Habits of the Kalimbergians" meets all the requirements for publication in our journal, provided you make all the modifications necessary to comply with our publishing standards. We thank you for choosing The Journal of University Research, and look forward to receiving more fascinating accounts from you.\u000a\u000aYours sincerely,\u000aThe Editor"\u000a\u000aYou reflect on how your whole career will be founded on a helplessly grinning, cracked skull.<<else if ($skull is 'human') and ($originality > 1)>>This is a bug, should not have happened.<<endif>>\u000a\u000a[[The End.|End]]
+V<<if (($skull is 'bear') and ($originality <= 1)) or $niks >>"Dear sir,\u000a\u000aWe regret to inform you that we will not be possible for us to publish your article "Connected Worlds: A New Insight Into the Hunting Habits of the Kalimbergians". We are sorry to find that its contents is lacking in both quantity and quality, your analyses being too shallow and too few to really be of any intellectual interest to our audience.<<if $skull is 'bear'>>Moreover, we would like to point out that a bear skull similar to yours was found in West Kalimberg some months ago, and was thoroughly analysed by Dr. Howards.<<endif>> We would be pleased to consider any other piece you might have for publication in the future.\u000a\u000aYours Faithfully,\u000aThe Editor."\u000a\u000aTriumphantly the cracked skull rests on your desk.\u000a<<else if ($skull is 'bear') and ($originality > 1)>>"Dear Arch,\u000a\u000aThe journal asked that I write to you, since they felt if they did it they might hurt your feelings, and everyone appreciates your work here. But really... Are you out of your mind? You find a bear skull the age of which you have not even assessed, and all of a sudden you go throwing wild hypotheses about advanced Kalimbergian weaponry and their superior running speed. Maybe you should take some rest, clear your mind ( I hear you're into meditation now, that's good). Come back to us when you feel like doing some real, rigorous, scientific work.\u000a\u000aYour friend,\u000aJ. Smith"\u000a\u000aWith a beastly grin the skull rests on your desk.\u000a<<else if ($skull is 'human') and ($originality <= 1)>>"Dear sir,\u000a\u000aWe are pleased to inform you that your article "Connected Worlds: A New Insight Into the Hunting Habits of the Kalimbergians" meets all the requirements for publication in our journal, provided you make all the modifications necessary to comply with our publishing standards. We thank you for choosing The Journal of University Research for your major discovery in the field of anthropolicalo-cognitive archaeology, and look forward to receiving more fascinating accounts from you.\u000a\u000aYours sincerely,\u000aThe Editor"\u000a\u000aYou reflect on how your whole career will be founded on a helplessly grinning, cracked skull.<<else if ($skull is 'human') and ($originality > 1)>>This is a bug, should not have happened.<<endif>>\u000a\u000a[[The End.|End]]
 p906
 sg23
 Vjudgement
@@ -2963,8 +2963,8 @@ g26
 I8
 I24
 I17
-I40
-I35
+I56
+I0
 I6
 I236
 I0
