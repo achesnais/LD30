@@ -1365,15 +1365,15 @@ g14
 I00
 sg15
 (lp429
-F1690.0
-aF1130.0
+F2110.0
+aF1270.0
 asg17
 (itiddlywiki
 Tiddler
 p430
 (dp431
 g21
-VSpear fly. Spear hit monster. Monster eyes Monster pain.\u000a\u000aMonster not stop. Monster come.\u000a\u000aHands empty.\u000a\u000a[[Kill|bear attacks]]\u000a<<if not $tired>>[[Run|run away][$hunt -= 1]]<<endif>>
+V<<set $shot to true>>Spear fly. Spear hit monster. Monster eyes Monster pain.\u000a\u000aMonster not stop. Monster come.\u000a\u000aHands empty.\u000a\u000a[[Kill|bear attacks]]\u000a<<if not $tired>>[[Run|run away][$hunt -= 1]]<<endif>>
 p432
 sg23
 VShoot spear
@@ -1383,9 +1383,9 @@ g26
 ((I2014
 I8
 I24
-I9
 I18
-I37
+I26
+I20
 I6
 I236
 I0
@@ -1473,7 +1473,7 @@ Tiddler
 p460
 (dp461
 g21
-V<<if $sneak is true>>Leaves on ground noise. Monster move. Smell. Look me. Rise.\u000a\u000a<<endif>>Feel strong. Monster no scare me.\u000a\u000a[[Kill|bear attacks][$hunt += 1]]
+V<<if $sneak is true>>Leaves on ground noise. Monster move. Smell. Look me. Rise.\u000a\u000a<<endif>>Feel strong. Monster no scare me.\u000a\u000a[[Kill|bear attacks][$hunt += 1]]\u000a<<if $weapon is 'thrower'>>[[Shoot spear!|Shoot spear]]<<endif>>
 p462
 sg23
 Vrun to monster
@@ -1483,9 +1483,9 @@ g26
 ((I2014
 I8
 I24
-I12
-I30
-I21
+I18
+I26
+I0
 I6
 I236
 I0
@@ -1864,7 +1864,7 @@ Tiddler
 p578
 (dp579
 g21
-VMonster angry<<if $monsterHurt is true>> but Monster hurt<<endif>>.Monster close. Monster raise its paw.\u000a\u000a[[Roaaaaaaaaaar|theory]]\u000a
+VMonster angry<<if $monsterHurt is true>> but Monster hurt<<endif>>. Monster close. Monster raise its paw.\u000a\u000a[[Roaaaaaaaaaar|theory]]
 p580
 sg23
 Vbear attacks
@@ -1874,9 +1874,9 @@ g26
 ((I2014
 I8
 I24
-I9
-I9
-I41
+I18
+I25
+I27
 I6
 I236
 I0
@@ -1914,7 +1914,7 @@ Tiddler
 p593
 (dp594
 g21
-VMonster run very fast. [[Tired|fail2]].\u000a
+VMonster run very fast. [[Tired|fail2]].
 p595
 sg23
 Vfail
@@ -1923,12 +1923,12 @@ sg25
 g26
 ((I2014
 I8
-I23
-I16
-I51
-I49
-I5
-I235
+I24
+I18
+I25
+I36
+I6
+I236
 I0
 tp597
 (dp598
@@ -2064,7 +2064,7 @@ Tiddler
 p638
 (dp639
 g21
-V<<set $tired to true>>Can't run any more. \u000a\u000a<<if $weapon is 'axe' or $weapon is 'spear'>>[[Turn around. Fight.|bear attacks]]<<else if $weapon is 'thrower' >>[[Turn around. Shoot spear.|Shoot spear]]<<endif>>
+V<<set $tired to true>>Can't run any more. \u000a\u000a<<if $shot or ($weapon is 'axe') or ($weapon is 'spear')>>[[Turn around. Fight.|bear attacks]]<<else if ($weapon is 'thrower') and (not $shot) >>[[Turn around. Shoot spear.|Shoot spear]]<<endif>>
 p640
 sg23
 Vfail3
@@ -2074,9 +2074,9 @@ g26
 ((I2014
 I8
 I24
-I17
-I3
-I39
+I18
+I24
+I24
 I6
 I236
 I0
@@ -2941,7 +2941,7 @@ tp900
 Rp901
 sbsa(dp902
 g14
-I01
+I00
 sg15
 (lp903
 F430.0
@@ -3152,7 +3152,7 @@ Tiddler
 p964
 (dp965
 g21
-V<<if $tired>>Tired.\u000a\u000a<<endif>><<if $monsterHurt>>Monster hurt<<if $shot>> by spear in him<<endif>>.\u000a\u000a<<endif>>Water in Monster's mouth. Breath coming out of it.<<if $shot>>\u000a\u000aCircle monster. [[Get spear]].<<else>>[[Aim head.]]<<endif>>
+V<<if $tired>>Tired.\u000a\u000a<<endif>><<if $monsterHurt>>Monster hurt.\u000a\u000a<<endif>>Water in Monster's mouth. Breath coming out of it.<<if $shot>>\u000a\u000aCircle monster. [[Get spear out|Get spear]].<<else>>[[Aim head.]]<<endif>>
 p966
 sg23
 Vbear_death
@@ -3163,8 +3163,8 @@ g26
 I8
 I24
 I18
-I17
-I56
+I30
+I44
 I6
 I236
 I0
