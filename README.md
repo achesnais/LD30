@@ -1,7 +1,7 @@
 A Ludic Proof of the Difficulties Inherent in Finding a Proper Skull
 ====
 
-My my entry for Ludum Dare 30, with the theme "Connected Worlds".
+My entry for Ludum Dare 30, with the theme "Connected Worlds".
 
 Description
 ==
