@@ -1158,7 +1158,7 @@ tp364
 Rp365
 sbsa(dp366
 g14
-I00
+I01
 sg15
 (lp367
 F1550.0
@@ -1169,7 +1169,7 @@ Tiddler
 p368
 (dp369
 g21
-V<<if $weapon is 'axe'>>Axe heavy. One blow and the monster [[eaten|hunt_choice]]. Monster big.<<elseif $weapon is 'thrower'>>Throw-spear good. Kill unseen. [[Eat|hunt_choice]] unhurt.<<else>>Spear good reach. Spear make [[hunt_choice]].<<endif>>\u000aMonster alone. Monster not moving.\u000a
+V<<if $weapon is 'axe'>>Axe heavy. One blow and the monster [[eaten|hunt_choice]]. Monster big.<<elseif $weapon is 'thrower'>>Throw-spear good. Kill unseen. [[Eat|hunt_choice]] unhurt.<<else>>Spear good reach. Spear make [[food|hunt_choice]].<<endif>>\u000aMonster alone. Monster not moving.\u000a
 p370
 sg23
 Vbegin-hunt-bis
@@ -1178,12 +1178,12 @@ sg25
 g26
 ((I2014
 I8
-I24
-I12
-I43
-I58
-I6
-I236
+I27
+I22
+I22
+I5
+I2
+I239
 I0
 tp372
 (dp373
