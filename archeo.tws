@@ -1158,7 +1158,7 @@ tp364
 Rp365
 sbsa(dp366
 g14
-I01
+I00
 sg15
 (lp367
 F1550.0
@@ -2902,7 +2902,7 @@ Tiddler
 p889
 (dp890
 g21
-VYou hear the distant howl of a wolf among the pines. Your meditations meditations have led you away from the campground and deep into the forest.\u000a\u000a[[A clearing.]]
+VYou hear the distant howl of a wolf among the pines. Your meditations have led you away from the campground and deep into the forest.\u000a\u000a[[A clearing.]]
 p891
 sg23
 Vtheory
@@ -2910,13 +2910,13 @@ p892
 sg25
 g26
 ((I2014
-I8
-I24
-I11
-I33
-I34
+I9
 I6
-I236
+I8
+I28
+I20
+I5
+I249
 I0
 tp893
 (dp894
